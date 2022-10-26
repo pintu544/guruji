@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 // todo route
-app.use('/',todoRoutes);
+app.use('/', todoRoutes);
 
 // app.get('/', (req,res) => {
 //     res.send("My todo...");
