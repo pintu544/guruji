@@ -26,7 +26,20 @@ All the codes are written in MVC (Model-View-Controller) framework.
 
 ## Project Demo
 # Login
-![image]()
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/signin.png)
+
+# Todo
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/todo.png)
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/todo2.png)
+
+# Add
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/add.png)
+
+# update
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/update.png)
+
+#delete
+![image](https://github.com/Yashaswi-Anand/Todo-fullStack/blob/master/screenshots/delete.png)
 
 
 ## Project link
