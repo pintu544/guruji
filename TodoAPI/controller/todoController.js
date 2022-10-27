@@ -24,7 +24,7 @@ exports.getTodo = async(req,res) => {
         const todo = await Todo.find();
 
         if(todo.length == 0){
-            return res.status(400).json({message: 'Todo is empty'});
+            return res.status(400).json({todo:[], message: 'Todo is empty'});
         }
         return res.status(200).json({ todo: todo, message: 'Todo fetch successful.'});
 
