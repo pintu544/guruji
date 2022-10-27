@@ -4,6 +4,13 @@ const app = express()
 const bodyParser = require('body-parser')
 const db = require('./config/mongoose')
 const todoRoutes = require('./routes/todoRoutes')
+var cors = require('cors');
+
+// cors (secure cross-origin requests)
+var corsOptions = {
+    origin: '*',
+}
+app.use(cors(corsOptions));
 
 
 // body parser

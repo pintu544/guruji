@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import NavBar from './NavBar';
+import { success } from './Toast';
 import { signin } from './Utils/ApiUtils';
+import './App.css';
 
 function LoginPage() {
 
@@ -7,17 +11,22 @@ function LoginPage() {
         email: "",
         password: ""
     });
-
+    const navigate = useNavigate()
+    
     const onHandleEvent = (event) =>{
         setLogin({...loginData, [event.target.name]: event.target.value, [event.target.name]: event.target.value})
         console.log(loginData);
     }
 
     const onSignin = async() =>{
+
+        
         //console.log(loginData);
         const apiResponce = await signin(loginData)
         if (apiResponce.status === 200) {
+            success(apiResponce.data.message)
             console.log("responcemessage", apiResponce.data.message);
+            navigate('/');
         } else {
             console.log("error");
         }
@@ -26,7 +35,8 @@ function LoginPage() {
 
     return (
         <div>
-            <h4 className="my-5">Signin</h4>
+            <NavBar/>
+            <h4 className="my-5 fs-2 text-danger">SIGN IN</h4>
             <div>
                 <form className="d-flex flex-column align-items-center ">
                     <input
@@ -45,8 +55,8 @@ function LoginPage() {
                         onChange={(e) => onHandleEvent(e)}
                     />
                 </form>
-                <button className="form-control w-50 btn btn-primary mt-3" onClick={() => onSignin()}>
-                    Login
+                <button className="form-control w-50 btn btn-primary mt-3 btn" onClick={() => onSignin()}>
+                    LOGIN
                 </button>
             </div>
         </div>

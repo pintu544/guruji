@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.btn{
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 50px 0px;
+  color: #354259;
+  background-color: white;
+  border: solid 2px #354259;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.btn:hover{
+  background-color: #354259;
+  color: white;
+  border: solid 2px white;
+}
+
+.margin{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.allBtn{
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0px;
+  padding: 8px 40px;
+  background-color: #6780ac;
+}
+
+.todo-text{
+  color: darkblue;
+  font-family: cursive;
+  text-align: start;
+}
