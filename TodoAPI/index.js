@@ -17,6 +17,8 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
+app.set('secretKey', "mySecretKey")
+
 // todo route
 app.use('/', todoRoutes);
 

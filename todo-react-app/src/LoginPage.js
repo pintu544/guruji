@@ -25,7 +25,8 @@ function LoginPage() {
         const apiResponce = await signin(loginData)
         if (apiResponce.status === 200) {
             success(apiResponce.data.message)
-            console.log("responcemessage", apiResponce.data.message);
+            console.log("responcemessage", apiResponce.data.token);
+            localStorage.setItem("token", apiResponce.data.token)
             navigate('/');
         } else {
             console.log("error");

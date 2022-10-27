@@ -117,28 +117,28 @@ function Dashboard() {
             </div>
 
             {allTodoListDate.length === 0
-             ? <h3 className='text-danger'><i>No any todo available...</i></h3>
-            : <div className='container'>
-            <div className='margin'>
-                <div className='row mt-3 ms-5'>
-                    <div className='col-4 text-success fs-3 todo-text'>Todo</div>
-                    <div className='col-3 text-success fs-3 todo-text'>Update</div>
-                    <div className='col-3 text-success fs-3 todo-text'>Delete</div>
-                </div>
-            </div>
-        
-            <div className='margin'>
-                {loading
-                    ? (<p>Loading....</p>)
-                    : (allTodoListDate.map(item => (
-                        <div className='row mt-3 ms-5 ' key={item._id}>
-                            <div className='col-4 fs-4 todo-text'>{item.title}</div>
-                            <div className='col-3 todo-text ms-4'><i onClick={() => onTodoEdit(item._id)} className="text-warning fa-solid fa-pen-to-square fs-6"></i></div>
-                            <div className='col-3 todo-text ms-4'><i onClick={() => onDeteteTodo(item._id)} className="text-danger fa-solid fa-trash-can fs-6"></i></div>
+                ? <h3 className='text-danger'><i>No any todo available...</i></h3>
+                : <div className='container'>
+                    <div className='margin'>
+                        <div className='row mt-3 ms-5'>
+                            <div className='col-4 text-success fs-3 todo-text'>Todo</div>
+                            <div className='col-3 text-success fs-3 todo-text'>Update</div>
+                            <div className='col-3 text-success fs-3 todo-text'>Delete</div>
                         </div>
-                    )))}
-            </div>
-        </div> }
+                    </div>
+
+                    <div className='margin'>
+                        {loading
+                            ? (<p>Loading....</p>)
+                            : (allTodoListDate.map(item => (
+                                <div className='row mt-3 ms-5 ' key={item._id}>
+                                    <div className='col-4 fs-4 todo-text'>{item.title}</div>
+                                    <div className='col-3 todo-text ms-4'><i onClick={() => onTodoEdit(item._id)} className="text-warning fa-solid fa-pen-to-square fs-6"></i></div>
+                                    <div className='col-3 todo-text ms-4'><i onClick={() => onDeteteTodo(item._id)} className="text-danger fa-solid fa-trash-can fs-6"></i></div>
+                                </div>
+                            )))}
+                    </div>
+                </div>}
         </div>
     )
 }
