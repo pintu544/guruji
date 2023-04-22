@@ -45,7 +45,7 @@
 <p>}`</p>
 <h4 id="login">signin</h4>
 <p><code>POST /signin</code></p>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/signin.jpg" alt="signin"> 
+ <img src="https://www.linkpicture.com/q/signin_1.png" alt="signin"> 
 <p>Logs in a user and returns a JWT token.</p>
 <h5 id="request-body-1">Request Body</h5>
 <p><code>{ "email": "johndoe@example.com", "password": "password" }</code></p>
@@ -55,7 +55,7 @@
 <p><code>{ "token": "&lt;jwt-token&gt;" }</code></p>
 <h3 id="tasks">Tasks</h3>
 <h4 id="create-task">Create Task</h4>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/createTodo.jpg" alt="createTodo"> 
+ <img src="https://www.linkpicture.com/q/createTodo.png" alt="createTodo"> 
 <p><code>POST /create-todo</code></p>
 <p>Creates a new task.</p>
 <h5 id="request-body-2">Request Body</h5>
@@ -65,7 +65,7 @@
 <p><code>{ "_id": "6158c8230a5f6ecb12345679", "taskName": "Task 1", "taskDescription": "Do something", "taskStatus": "pending", "createdAt": "2023-04-22T10:55:50.177Z", "updatedAt": "2023-04-22T10:55:50.177Z", __v:0 }</code></p>
 <h4 id="get-all-tasks">Get All Tasks</h4>
 <p><code>GET /todo</code></p>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/getTodo.jpg" alt="getTodo"> 
+ <img src="https://www.linkpicture.com/q/getTodo_2.png" alt="getTodo"> 
 <p>Gets all tasks for the authenticated user.</p>
 <h5 id="response-3">Response</h5>
 <p>Returns an array of all tasks for the authenticated user.</p>
@@ -78,8 +78,8 @@
 <p>Returns the task object that matches the specified ID.</p>
 <p><code>{ "_id": "6158c8230a5f6ecb12345679", "taskName": "Task 1", "taskDescription": "Do something", "taskStatus": "pending", "createdAt": "2023-04-22T10:55:50.177Z", "updatedAt": "2023-04-</code></p>
 <h4 id="update-task">Update Task</h4>
-<p><code>PUT /tasks/:id</code></p>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/updateTodo.jpg" alt="updateTodo"> 
+<p><code>PATCH/tasks/:id</code></p>
+ <img src="https://www.linkpicture.com/q/updateTodo.png" alt="updateTodo"> 
 <p>Updates a task by ID.</p>
 <h5 id="request-body-3">Request Body</h5>
 <p>`{</p>
@@ -93,7 +93,7 @@
 <h4 id="delete-task">Delete Task</h4>
 <p><code>DELETE /todo/:id</code></p>
 <p>Deletes a task by ID.</p>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/deleteTodo.jpg" alt="deleteTodo"> 
+ <img src="https://www.linkpicture.com/q/deleteTodo_1.png" alt="deleteTodo"> 
 <h5 id="response-6">Response</h5>
 <p>Returns a message indicating the task has been deleted.</p>
 <p><code>{ "message": "Task deleted successfully" }</code></p>
