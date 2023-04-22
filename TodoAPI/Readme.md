@@ -25,7 +25,7 @@
 <h3 id="authentication">Authentication</h3>
 <h4 id="signup">Signup</h4>
 <p><code>POST /signup</code></p>
- <img src="https://github.com/pintu544/guruji/blob/main/TodoAPI/signup.jpg" alt="signup"> 
+ <img src="https://www.linkpicture.com/q/signup_6.png" alt="signup"> 
 <p>Creates a new user account.</p>
 <h5 id="request-body">Request Body</h5>
 <p>`{</p>
